@@ -1,0 +1,98 @@
+
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('fondo-frob.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    background-position: center top;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    position: relative;
+    
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #000000; /* Azul de Microsoft */
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #0078D4; /* Azul de Microsoft */
+    outline: none;
+}
+
+div {
+    text-align: right;
+}
+
+.btn-login {
+    width: 30%;
+    padding: 10px;
+    background: #0078D4;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+
+}
+
+.btn-login:hover {
+    background-color: #005a9e;
+}
+
+.link {
+    text-align: left;
+    display: block;
+    margin-top: 0px;
+    color: #0078D4;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

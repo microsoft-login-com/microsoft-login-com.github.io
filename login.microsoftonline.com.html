@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión - Frob</title>
+    <style>
+        /* Reseteo básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('images/fondo-frob.jpg') no-repeat center top fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+            padding: 30px; /* Aumenta el espacio interno */
+            border-radius: 0px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300%;
+            max-width: 500px; /* Aumenta el ancho */
+            text-align: left;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 190px; /* Aumenta el tamaño del logo */
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px; /* Hace el título un poco más grande */
+            color: #000000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 12px; /* Aumenta el tamaño de los inputs */
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px; /* Hace el texto más grande */
+        }
+
+        input:focus {
+            border-color: #0078D4;
+            outline: none;
+        }
+
+        .btn-container {
+            text-align: right;
+        }
+
+        .btn-login {
+            width: 20%; /* Hace el botón más grande */
+            padding: 9px;
+            font-size: 16px; /* Aumenta el tamaño del texto */
+            background: #0078D4;
+            color: white;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+        }
+
+        .btn-login:hover {
+            background-color: #005a9e;
+        }
+
+        .link {
+            text-align: left;
+            display: block;
+            margin-top: 0px;
+            color: #0078D4;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="images/logo-frob.png" alt="Logo del Frob" class="logo">
+            <h2>Iniciar sesión</h2>
+        </div>
+        <form action="#" method="POST">
+            <input type="text" id="email" name="email" placeholder="Correo electrónico, teléfono o Skype" required>
+            <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+            <a href="#" class="link">¿No puede acceder a su cuenta?</a>
+            <div class="btn-container">
+                <button type="submit" class="btn-login">Siguiente</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
